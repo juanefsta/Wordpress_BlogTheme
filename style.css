@@ -1,0 +1,266 @@
+/*
+Theme Name: My theme
+Theme URI: www.myweb.com
+Description: descripcion
+Version: 1
+Author: jpe
+Author URL: direccion
+*/
+
+/*----Estilos generales----*/
+* {
+ margin: 0px;
+ padding: 0px;
+}
+
+body{
+    background: #D3DFE5;
+    font-size: 12pt;
+    font-family: "open sans", Arial, Helvetica, sans-serif;
+}
+
+header, #main, footer{
+    width: 85%;
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+a{
+    color: #016191;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*----Header----*/
+
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 85%;
+}
+
+header #logo {
+    width: 40%;
+    float: left;
+}
+/*para una imagen agregar img y cambiar las properties de la imagen */
+header #logo p{
+    font-family: 'Droid Serif', serif;
+    font-size: 4rem;
+    font-weight: 100;
+    text-align: left;
+    color: white;
+}
+
+header #logo span{
+    font-family: 'Droid Serif', serif;
+    width: 100%;
+    position: relative;
+    display: block;
+    font-weight: 400;
+    margin-top: 10px;
+    right: 20px;
+    text-align:center;
+    color: white;
+}
+
+header nav{
+    width: 60%;
+    float: right;
+    padding: 10px 0px;
+    margin-top: 30px;
+}
+
+header nav ul{
+    float: right;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 10px; 
+    list-style: none;
+}
+
+header nav ul li a{
+    font-family: 'Droid Serif', serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+/*----Main----*/
+
+#main {
+    overflow: hidden;
+}
+
+/*----Slideshow----*/
+#main #slideshow{
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#main #slideshow .thumb{
+    width: 49%;
+    float: left;
+    margin-right: 2%;   
+}
+
+#main #slideshow article{
+    float: left;
+    width: 49%;
+    text-align: justify;
+    font-family: 'Droid Serif', serif;
+    font-size: 1rem;  
+}
+
+#main #slideshow article h2{
+    text-align: left;
+    font-family: 'Droid Serif', serif;
+    font-size: 2rem;  
+    font-weight: 300;
+}
+
+#main #slideshow article .date{
+    text-align: left;
+    font-family: 'Droid Serif', serif;
+    font-size: .8rem;  
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#main #slideshow .slidesjs-pagination li{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    background: #ffffff;
+}
+
+#main #slideshow .slidesjs-pagination li a{
+    width: 20px;
+    height: 20px;
+    font-size: 0px;
+    display: block;
+}
+
+#main #slideshow .slidesjs-pagination .active{
+    background: #404547;
+}
+
+#main #articles_list{
+    clear: both;
+    width: 75%;
+    float: left;
+}
+
+#main #articles_list article{
+    margin-bottom: 40px;
+    margin-right: 4%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #016191;
+}
+
+#main #articles_list article .thumb{
+    width: 35%;
+    margin-right: 4%;
+    float: left;
+    margin-bottom: 2%;
+}
+
+#main #articles_list article h2{
+    font-family: 'Droid Serif', serif;
+    font-size: 1.5rem;  
+    font-weight: 300;
+}
+
+/*
+#main #articles_list article h2 a{
+    aca podemos cambiar color al titulo y con hover sombreado
+}
+*/
+#main #articles_list article .extract{
+    text-align: justify;
+}
+
+#main #articles_list article .date{
+    text-align: left;
+    font-size: .8rem;  
+    margin-bottom: 10px;
+}
+
+#main #articles_list #pagination{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#main #articles_list  #pagination p{
+    text-align: center;
+}
+
+#main #articles_list  #pagination p a{
+    margin: 0px 20px;
+    font-family: 'Droid Serif', serif;
+    font-size: 1.5rem;  
+    font-weight: 300;
+    display: inline-block;
+}
+
+/*----ASIDE----*/
+
+#main aside{
+    width: 25%;
+    float: left;
+}
+#main .widget{
+    width: 100%;
+}
+
+.widget{
+    margin-bottom: 50px;
+    display: block;
+    float: left;
+}
+
+.widget h3{
+    font-size: 1.4rem;
+    font-family: 'Droid Serif', serif;
+    font-weight: 300;
+}
+
+.widget ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.widget ul li a{
+    font-size: .9rem;
+    font-family: 'Droid Serif', serif;
+    font-weight: 300;
+}
+
+/*----FOOTER----*/
+
+footer {
+    width: 85%;
+}
+
+footer .widget{
+    width: 25%;
+}
+
+footer #copyright{
+    width: 100%;
+    text-align: center;
+    clear: both;
+    padding: 10px;
+    color: grey;
+    font-family: 'open-sans',Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+}
