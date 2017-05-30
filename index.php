@@ -1,37 +1,5 @@
-<!doctype html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Centro Cultural</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet"> 
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/jquery.slides.min.js"></script>
-    <script>
-    $(function(){
-      $("#slideshow").slidesjs({
-        navigation: false,
-        height: 300
-      });
-    });
-  </script>
-</head>
-<body>
-  <header>
-    <div id="logo"><p>Centro cultural</p><span>Juventud Peronista</span></div>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#">Pagina ejemplo</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section id="main">
+<?php get_header();?>
+<section id="main">
     <div id="no-slide">
       <section id="slideshow">
         <div class="slide">
@@ -84,40 +52,6 @@
         <a href="#">Siguientes -></a></p>
       </div>
     </section>
-    <aside>
-      <section class="widget">
-        <h3>Widget</h3>
-        <ul>
-          <li><a href="#">Lorem Ipsum</a></li>
-          <li><a href="#">Lorem Ipsum</a></li>
-          <li><a href="#">Lorem Ipsum</a></li>
-          <li><a href="#">Lorem Ipsum</a></li>
-        </ul>    
-      </section>
-    </aside>
+    <?php get_sidebar();?>
   </section>
-  <footer>
-    <section id="ft_widgets">
-       <section class="widget">
-        <h3>Widget 1</h3>
-        <ul>
-          <li><a href="#">Lorem Ipsum</a></li>
-          <li><a href="#">Lorem Ipsum</a></li>
-          <li><a href="#">Lorem Ipsum</a></li>
-          <li><a href="#">Lorem Ipsum</a></li>
-        </ul>    
-      </section>
-       <section class="widget">
-        <h3>Widget 2</h3>
-        <ul>
-          <li><a href="#">Lorem Ipsum</a></li>
-          <li><a href="#">Lorem Ipsum</a></li>
-          <li><a href="#">Lorem Ipsum</a></li>
-          <li><a href="#">Lorem Ipsum</a></li>
-        </ul>    
-      </section>
-    </section>
-    <p id="copyright">Design by juanefsta@gmail.com</p>
-  </footer>
-</body>
-</html>
+<?php get_footer();?>
