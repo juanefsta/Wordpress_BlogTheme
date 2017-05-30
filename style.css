@@ -264,3 +264,33 @@ footer #copyright{
     font-family: 'open-sans',Arial, Helvetica, sans-serif;
     font-size: .9rem;
 }
+
+/*----FOOTER----*/
+
+#main #articles_list #cat_name{
+    font-family: 'open-sans',Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333333;
+}
+
+/*----COMENTARIOS----*/
+#main #articles_list #comentarios {
+    margin-bottom: 40px;
+    margin-right: 4%;
+}
+
+#main #articles_list #comentarios > h3 {
+    font-family: 'open-sans',Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#main #articles_list #caja_comentarios {
+    height: 70px;
+    background: #B8C6CC;
+}
