@@ -1,5 +1,5 @@
 # Wordpress_BlogTheme
-Wordpress theme created to aply on blogs!
+Wordpress theme created for blogs!
 ------------------------------------------------
 
 Pasos para activarlo:
