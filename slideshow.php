@@ -1,26 +1,22 @@
 <section id="slideshow">
+    <?php query_posts('category_name=slider'); ?>
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div class="slide">
-        <img class="thumb" src="http://lorempixel.com/470/300/">
+        <div class="thumb">
+            <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'slider_thumbs' ); }?>
+        </div> 
         <article>
-        <hgroup><h2><a href="#">Titulo de articulo</a></h2></hgroup>
-        <p class="date">26 de Mayo de 2017 en <a href="#">Categoria 1</a></p>
-        <p class="extract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet dapibus eros. Vivamus condimentum libero sem, quis aliquam augue vulputate nec. Donec eu nisl ut lacus maximus dapibus at ac nulla. Nunc nec justo placerat, aliquam eros sit amet, vulputate sapien. Vivamus non arcu ac arcu accumsan rutrum.</p>
+          <div class="thumb"><a href="<?php the_permalink();?>"></a></div>             
+          <hgroup>
+            <h2>
+              <a href="<?php the_permalink();?>"><?php the_title();?></a>
+            </h2>
+          </hgroup>
+                <div class="date"><?php the_date();?> en <span><?php the_category();?><span></div>
+                <div class="extract"><?php the_excerpt();?></div>
         </article>
-    </div>
-    <div class="slide">
-        <img class="thumb" src="http://lorempixel.com/470/300/">
-        <article>
-        <hgroup><h2><a href="#">Titulo de articulo</a></h2></hgroup>
-        <p class="date">27 de Mayo de 2017 en <a href="#">Categoria 2</a></p>
-        <p class="extract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet dapibus eros. Vivamus condimentum libero sem, quis aliquam augue vulputate nec. Donec eu nisl ut lacus maximus dapibus at ac nulla. Nunc nec justo placerat, aliquam eros sit amet, vulputate sapien. Vivamus non arcu ac arcu accumsan rutrum.</p>
-        </article>
-    </div>
-    <div class="slide">
-        <img class="thumb" src="http://lorempixel.com/470/300/">
-        <article>
-        <hgroup><h2><a href="#">Titulo de articulo</a></h2></hgroup>
-        <p class="date">28 de Mayo de 2017 en <a href="#">Categoria 3</a></p>
-        <p class="extract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet dapibus eros. Vivamus condimentum libero sem, quis aliquam augue vulputate nec. Donec eu nisl ut lacus maximus dapibus at ac nulla. Nunc nec justo placerat, aliquam eros sit amet, vulputate sapien. Vivamus non arcu ac arcu accumsan rutrum.</p>
-        </article>
-    </div>
+    </div>        
+    <?php endwhile; else: ?>
+
+    <?php endif; ?>  
 </section>
